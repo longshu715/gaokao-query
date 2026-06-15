@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>高考志愿「四位一体」联动查询 — 专业·大学·城市·产业</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <div class="header-brand">
+        <div class="header-icon">🎓</div>
+        <div>
+          <div class="header-title">高考志愿「四位一体」联动查询</div>
+          <div class="header-subtitle">专业 ↔ 大学 ↔ 城市 ↔ 产业 · 交叉穿透检索</div>
+        </div>
+      </div>
+      <div class="header-badge">📊 2026年教育部最新本科专业目录</div>
+    </div>
+  </header>
+
+  <main class="app-container">
+    <!-- Tab Navigation -->
+    <nav class="tab-nav" id="tabNav">
+      <button class="tab-btn active" data-tab="major">
+        <span class="tab-icon">📚</span>
+        <span class="tab-label">按专业查</span>
+        <span class="tab-desc">从专业出发，看大学·城市·产业</span>
+      </button>
+      <button class="tab-btn" data-tab="university">
+        <span class="tab-icon">🏫</span>
+        <span class="tab-label">按高校查</span>
+        <span class="tab-desc">从高校出发，看专业·就业城市·产业</span>
+      </button>
+      <button class="tab-btn" data-tab="city">
+        <span class="tab-icon">🏙️</span>
+        <span class="tab-label">按城市查</span>
+        <span class="tab-desc">从城市出发，看产业·高校·专业</span>
+      </button>
+      <button class="tab-btn" data-tab="industry">
+        <span class="tab-icon">🏭</span>
+        <span class="tab-label">按产业查</span>
+        <span class="tab-desc">从产业出发，看城市·高校·专业</span>
+      </button>
+    </nav>
+
+    <!-- Search Section -->
+    <section class="search-section">
+      <div class="search-wrapper">
+        <div class="search-input-wrap">
+          <span class="search-icon">🔍</span>
+          <input
+            type="text"
+            class="search-input"
+            id="searchInput"
+            placeholder="输入关键词，智能搜索专业/大学/城市/产业..."
+            autocomplete="off"
+          >
+          <button class="search-clear" id="searchClear" title="清除">✕</button>
+        </div>
+        <div class="autocomplete-dropdown" id="autocompleteDropdown"></div>
+      </div>
+      <div class="search-hint" id="searchHint">
+        💡 试试输入「智能」发现具身智能、商业人工智能等专业，或直接输入大学/城市名称
+      </div>
+    </section>
+
+    <!-- Category Index (dynamic per tab) -->
+    <section class="category-index" id="categoryIndex">
+      <!-- City Matrix (shown when city tab active) -->
+      <div class="city-matrix" id="cityMatrix" style="display:none;">
+        <!-- Tier groups rendered by JS -->
+      </div>
+
+      <!-- Industry Tree (shown when industry tab active) -->
+      <div class="industry-tree" id="industryTree" style="display:none;">
+        <!-- Gang/mu structure rendered by JS -->
+      </div>
+
+      <!-- Major Matrix (shown when major tab active) -->
+      <div class="city-matrix" id="majorMatrix" style="display:block;">
+        <!-- Category groups rendered by JS -->
+      </div>
+
+      <!-- University Matrix (shown when university tab active) -->
+      <div class="city-matrix" id="universityMatrix" style="display:none;">
+        <!-- Tier groups rendered by JS -->
+      </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section" id="resultsSection" style="display:none;">
+      <div class="results-header">
+        <div class="results-query-info">
+          <span class="results-query-badge" id="resultQueryBadge"></span>
+          <span class="results-title" id="resultQueryName"></span>
+        </div>
+        <button class="results-reset" id="resultsReset">↺ 返回首页重新查询</button>
+      </div>
+
+      <div class="cards-grid" id="cardsGrid">
+        <!-- 4 cards: Related Majors / Universities / Cities / Industries -->
+      </div>
+    </section>
+
+    <!-- Welcome / Empty State -->
+    <section class="empty-state" id="welcomeState">
+      <div class="empty-state-icon">🔍</div>
+      <div class="empty-state-title">选择查询入口，开启四位一体联动检索</div>
+      <div class="empty-state-desc">
+        点击上方四个查询入口按钮，或直接在搜索框中输入关键词（如「具身智能」「哈工大」「常州」「新能源」）开始探索
+      </div>
+    </section>
+  </main>
+
+  <footer class="app-footer">
+    <p>高考志愿「四位一体」联动查询系统 · 数据基于2026年教育部最新本科专业目录构建 · 仅供志愿填报参考</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
