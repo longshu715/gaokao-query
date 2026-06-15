@@ -13,144 +13,144 @@ const INDUSTRY_TREE = [
   {
     id: "ind100", 纲: "新一代信息技术", 纲_desc: "以集成电路、通信技术、光电子为核心的新一代信息技术产业集群。",
     目: [
-      { id: "ind101", name: "集成电路设计", description: "数字IC、模拟IC、射频IC、EDA工具等芯片设计全链路。", representative_cities: [{ cityId: "c002", note: "上海：中芯国际/华虹总部，全国IC设计第一" }, { cityId: "c003", note: "深圳：华为海思/中兴微电子等IC设计龙头集聚" }, { cityId: "c001", note: "北京：紫光展锐/寒武纪等AI芯片企业" }], related_universities: ["u001", "u002", "u003", "u004", "u007", "u015"], related_majors: ["m018", "m010", "m014"] },
-      { id: "ind102", name: "先进封装与测试", description: "3D封装、Chiplet、晶圆级封装等先进封装技术。", representative_cities: [{ cityId: "c010", note: "无锡：长电科技总部，封装测试全国第一" }, { cityId: "c006", note: "苏州：通富微电等封装企业集聚" }, { cityId: "c003", note: "深圳：先进封装技术研发高地" }], related_universities: ["u003", "u007", "u015"], related_majors: ["m018", "m026"] },
-      { id: "ind103", name: "新型显示", description: "OLED、MicroLED、量子点等新型显示面板技术。", representative_cities: [{ cityId: "c007", note: "合肥：京东方/维信诺产线，新型显示之都" }, { cityId: "c003", note: "深圳：华星光电/TCL总部" }, { cityId: "c016", note: "武汉：华星光电/天马微电子产线集聚" }], related_universities: ["u007", "u003"], related_majors: ["m018", "m026"] },
-      { id: "ind104", name: "5G/6G通信技术", description: "新一代移动通信标准、基站设备、核心网、终端芯片。", representative_cities: [{ cityId: "c003", note: "深圳：华为/中兴5G全球总部" }, { cityId: "c001", note: "北京：中国移动/中国信息通信研究院" }, { cityId: "c015", note: "南京：紫金山实验室，6G研发前沿" }], related_universities: ["u003", "u015", "u007"], related_majors: ["m010", "m011", "m018"] },
-      { id: "ind105", name: "光电子与光子学", description: "激光、光纤、光通信、光电传感器等光电子技术产业。", representative_cities: [{ cityId: "c016", note: "武汉：中国光谷，光电子产业规模超万亿" }, { cityId: "c006", note: "苏州：亨通光电等光纤光缆龙头" }, { cityId: "c003", note: "深圳：大族激光/光韵达等激光设备企业" }], related_universities: ["u007", "u003"], related_majors: ["m018", "m026"] }
+      { id: "ind101", name: "集成电路设计", description: "数字IC、模拟IC、射频IC、EDA工具等芯片设计全链路。", representative_cities: [{ cityId: "c002", note: "上海：中芯国际/华虹总部，全国IC设计第一" }, { cityId: "c003", note: "深圳：华为海思/中兴微电子等IC设计龙头集聚" }, { cityId: "c001", note: "北京：紫光展锐/寒武纪等AI芯片企业" }], related_universities: ["u003","u032","u008","u033","u037","u007","u053","u092","u090","u050","u047"], related_majors: ["m018", "m010", "m014"] },
+      { id: "ind102", name: "先进封装与测试", description: "3D封装、Chiplet、晶圆级封装等先进封装技术。", representative_cities: [{ cityId: "c010", note: "无锡：长电科技总部，封装测试全国第一" }, { cityId: "c006", note: "苏州：通富微电等封装企业集聚" }, { cityId: "c003", note: "深圳：先进封装技术研发高地" }], related_universities: ["u003","u007","u015","u037","u053","u106","u050","u047","u048"], related_majors: ["m018", "m026"] },
+      { id: "ind103", name: "新型显示", description: "OLED、MicroLED、量子点等新型显示面板技术。", representative_cities: [{ cityId: "c007", note: "合肥：京东方/维信诺产线，新型显示之都" }, { cityId: "c003", note: "深圳：华星光电/TCL总部" }, { cityId: "c016", note: "武汉：华星光电/天马微电子产线集聚" }], related_universities: ["u007","u003","u037","u034","u088","u053","u050"], related_majors: ["m018", "m026"] },
+      { id: "ind104", name: "5G/6G通信技术", description: "新一代移动通信标准、基站设备、核心网、终端芯片。", representative_cities: [{ cityId: "c003", note: "深圳：华为/中兴5G全球总部" }, { cityId: "c001", note: "北京：中国移动/中国信息通信研究院" }, { cityId: "c015", note: "南京：紫金山实验室，6G研发前沿" }], related_universities: ["u003","u032","u037","u033","u066","u007","u092","u053","u090","u050","u093"], related_majors: ["m010", "m011", "m018"] },
+      { id: "ind105", name: "光电子与光子学", description: "激光、光纤、光通信、光电传感器等光电子技术产业。", representative_cities: [{ cityId: "c016", note: "武汉：中国光谷，光电子产业规模超万亿" }, { cityId: "c006", note: "苏州：亨通光电等光纤光缆龙头" }, { cityId: "c003", note: "深圳：大族激光/光韵达等激光设备企业" }], related_universities: ["u007","u003","u032","u097","u037","u053","u092","u050","u106"], related_majors: ["m018", "m026"] }
     ]
   },
   // ---- 纲2：人工智能 ----
   {
     id: "ind200", 纲: "人工智能", 纲_desc: "以AI技术为核心驱动力的产业集群，从基础层到应用层全覆盖。",
     目: [
-      { id: "ind201", name: "具身智能机器人", description: "AI大模型与物理机器人深度融合，人形/四足/协作机器人。", representative_cities: [{ cityId: "c003", note: "深圳：优必选/大疆等2000+机器人企业" }, { cityId: "c001", note: "北京：具身智能国家重点研发牵头城市" }, { cityId: "c002", note: "上海：张江机器人谷，ABB/发那科研发中心" }], related_universities: ["u001", "u002", "u003", "u005"], related_majors: ["m001", "m003", "m013"] },
-      { id: "ind202", name: "大语言模型与生成式AI", description: "以Transformer架构为代表的大模型技术与AIGC应用。", representative_cities: [{ cityId: "c001", note: "北京：百度/字节/智谱AI/月之暗面" }, { cityId: "c005", note: "杭州：阿里通义千问/蚂蚁集团AI" }, { cityId: "c003", note: "深圳：腾讯混元/华为盘古大模型" }], related_universities: ["u003", "u004", "u005", "u007"], related_majors: ["m009", "m010", "m011", "m007"] },
-      { id: "ind203", name: "计算机视觉与自动驾驶", description: "图像识别、目标检测、自动驾驶感知系统。", representative_cities: [{ cityId: "c003", note: "深圳：商汤/大疆车载/元戎启行" }, { cityId: "c001", note: "北京：百度Apollo/小马智行/地平线" }, { cityId: "c006", note: "苏州：Momenta/知行科技/智加科技" }], related_universities: ["u003", "u002", "u005"], related_majors: ["m009", "m010", "m011", "m003"] },
-      { id: "ind204", name: "AI+行业应用", description: "AI在金融、医疗、教育、制造等行业的垂直应用解决方案。", representative_cities: [{ cityId: "c001", note: "北京：AI+金融/医疗企业最密集" }, { cityId: "c002", note: "上海：AI+制造/金融应用领先" }, { cityId: "c005", note: "杭州：AI+电商/零售应用全国标杆" }], related_universities: ["u003", "u005", "u011", "u012"], related_majors: ["m007", "m008", "m009", "m012"] }
+      { id: "ind201", name: "具身智能机器人", description: "AI大模型与物理机器人深度融合，人形/四足/协作机器人。", representative_cities: [{ cityId: "c003", note: "深圳：优必选/大疆等2000+机器人企业" }, { cityId: "c001", note: "北京：具身智能国家重点研发牵头城市" }, { cityId: "c002", note: "上海：张江机器人谷，ABB/发那科研发中心" }], related_universities: ["u001","u002","u003","u005","u018","u103","u014","u091","u046","u050","u074"], related_majors: ["m001", "m003", "m013"] },
+      { id: "ind202", name: "大语言模型与生成式AI", description: "以Transformer架构为代表的大模型技术与AIGC应用。", representative_cities: [{ cityId: "c001", note: "北京：百度/字节/智谱AI/月之暗面" }, { cityId: "c005", note: "杭州：阿里通义千问/蚂蚁集团AI" }, { cityId: "c003", note: "深圳：腾讯混元/华为盘古大模型" }], related_universities: ["u003","u004","u005","u007","u066","u090","u092","u053","u093"], related_majors: ["m009", "m010", "m011", "m007"] },
+      { id: "ind203", name: "计算机视觉与自动驾驶", description: "图像识别、目标检测、自动驾驶感知系统。", representative_cities: [{ cityId: "c003", note: "深圳：商汤/大疆车载/元戎启行" }, { cityId: "c001", note: "北京：百度Apollo/小马智行/地平线" }, { cityId: "c006", note: "苏州：Momenta/知行科技/智加科技" }], related_universities: ["u003","u002","u005","u018","u015","u069","u091","u049","u014"], related_majors: ["m009", "m010", "m011", "m003"] },
+      { id: "ind204", name: "AI+行业应用", description: "AI在金融、医疗、教育、制造等行业的垂直应用解决方案。", representative_cities: [{ cityId: "c001", note: "北京：AI+金融/医疗企业最密集" }, { cityId: "c002", note: "上海：AI+制造/金融应用领先" }, { cityId: "c005", note: "杭州：AI+电商/零售应用全国标杆" }], related_universities: ["u003","u005","u011","u012","u090","u092","u043","u044","u014","u050"], related_majors: ["m007", "m008", "m009", "m012"] }
     ]
   },
   // ---- 纲3：高端装备制造 ----
   {
     id: "ind300", 纲: "高端装备制造", 纲_desc: "以智能制造、精密机械为核心的高端装备产业体系。",
     目: [
-      { id: "ind301", name: "工业机器人与智能装备", description: "六轴机器人、协作机器人、AGV、智能成套装备。", representative_cities: [{ cityId: "c003", note: "深圳：机器人全产业链最完整" }, { cityId: "c002", note: "上海：ABB/发那科/库卡研发中心" }, { cityId: "c009", note: "东莞：松山湖机器人产业基地" }], related_universities: ["u001", "u002", "u005", "u014"], related_majors: ["m013", "m014", "m017", "m001", "m003"] },
-      { id: "ind302", name: "数控机床与精密模具", description: "五轴联动数控机床、超精密加工、工业模具。", representative_cities: [{ cityId: "c011", note: "大连：科德数控，五轴机床龙头" }, { cityId: "c022", note: "沈阳：沈阳机床/i5智能机床" }, { cityId: "c009", note: "东莞：模具之都，精密模具产值全国第一" }], related_universities: ["u001", "u015"], related_majors: ["m017", "m014"] },
-      { id: "ind303", name: "航空航天装备", description: "大飞机、航空发动机、卫星、火箭等空天装备制造。", representative_cities: [{ cityId: "c001", note: "北京：航天科技/科工总部" }, { cityId: "c002", note: "上海：商飞C919总装/航天八院" }, { cityId: "c017", note: "西安：运-20/长征火箭/航空发动机" }], related_universities: ["u001", "u002", "u003", "u017"], related_majors: ["m027", "m039", "m038"] },
-      { id: "ind304", name: "轨道交通装备", description: "高铁、地铁、城际列车、磁悬浮等轨道交通制造。", representative_cities: [{ cityId: "c018", note: "株洲：中车株机/中车株洲所，电力机车全球第一" }, { cityId: "c020", note: "青岛：中车四方，复兴号动车组产地" }, { cityId: "c022", note: "长春：中车长客，地铁车辆全国领先" }], related_universities: ["u019", "u020"], related_majors: ["m037", "m014"] },
-      { id: "ind305", name: "海洋工程装备", description: "深海钻井平台、海洋牧场装备、深海潜水器、海上风电安装船。", representative_cities: [{ cityId: "c020", note: "青岛：中船重工/海洋国家实验室" }, { cityId: "c002", note: "上海：外高桥造船/沪东中华" }, { cityId: "c014", note: "天津：海油工程/博迈科" }], related_universities: ["u021", "u022"], related_majors: ["m041", "m040"] }
+      { id: "ind301", name: "工业机器人与智能装备", description: "六轴机器人、协作机器人、AGV、智能成套装备。", representative_cities: [{ cityId: "c003", note: "深圳：机器人全产业链最完整" }, { cityId: "c002", note: "上海：ABB/发那科/库卡研发中心" }, { cityId: "c009", note: "东莞：松山湖机器人产业基地" }], related_universities: ["u001","u002","u005","u018","u103","u015","u046","u091","u014","u050","u074","u020"], related_majors: ["m013", "m014", "m017", "m001", "m003"] },
+      { id: "ind302", name: "数控机床与精密模具", description: "五轴联动数控机床、超精密加工、工业模具。", representative_cities: [{ cityId: "c011", note: "大连：科德数控，五轴机床龙头" }, { cityId: "c022", note: "沈阳：沈阳机床/i5智能机床" }, { cityId: "c009", note: "东莞：模具之都，精密模具产值全国第一" }], related_universities: ["u001","u015","u038","u103","u046","u050","u017","u099","u106"], related_majors: ["m017", "m014"] },
+      { id: "ind303", name: "航空航天装备", description: "大飞机、航空发动机、卫星、火箭等空天装备制造。", representative_cities: [{ cityId: "c001", note: "北京：航天科技/科工总部" }, { cityId: "c002", note: "上海：商飞C919总装/航天八院" }, { cityId: "c017", note: "西安：运-20/长征火箭/航空发动机" }], related_universities: ["u001","u002","u003","u068","u023","u018","u096","u050"], related_majors: ["m027", "m039", "m038"] },
+      { id: "ind304", name: "轨道交通装备", description: "高铁、地铁、城际列车、磁悬浮等轨道交通制造。", representative_cities: [{ cityId: "c018", note: "株洲：中车株机/中车株洲所，电力机车全球第一" }, { cityId: "c020", note: "青岛：中车四方，复兴号动车组产地" }, { cityId: "c022", note: "长春：中车长客，地铁车辆全国领先" }], related_universities: ["u078","u079","u070","u036","u019","u020","u103"], related_majors: ["m037", "m014"] },
+      { id: "ind305", name: "海洋工程装备", description: "深海钻井平台、海洋牧场装备、深海潜水器、海上风电安装船。", representative_cities: [{ cityId: "c020", note: "青岛：中船重工/海洋国家实验室" }, { cityId: "c002", note: "上海：外高桥造船/沪东中华" }, { cityId: "c014", note: "天津：海油工程/博迈科" }], related_universities: ["u018","u021","u038","u022","u072","u080"], related_majors: ["m041", "m040"] }
     ]
   },
   // ---- 纲4：新能源与储能 ----
   {
     id: "ind400", 纲: "新能源与储能", 纲_desc: "围绕碳中和战略的新能源发电、储能及配套产业。",
     目: [
-      { id: "ind401", name: "动力电池全产业链", description: "涵盖正极/负极/电解液/隔膜/电芯/电池包全链条。", representative_cities: [{ cityId: "c008", note: "宁德：宁德时代总部，全球市占率37%+" }, { cityId: "c012", note: "常州：中创新航/蜂巢能源总部，动力电池产量全国第一" }, { cityId: "c007", note: "合肥：国轩高科总部，大众电池战略基地" }], related_universities: ["u009", "u010", "u015"], related_majors: ["m016", "m015", "m026"] },
-      { id: "ind402", name: "光伏全产业链", description: "硅料/硅片/电池片/组件/逆变器全产业链。", representative_cities: [{ cityId: "c012", note: "常州：天合光能/亿晶光电总部" }, { cityId: "c007", note: "合肥：通威/阳光电源/晶澳生产基地" }, { cityId: "c005", note: "杭州：正泰/锦浪等逆变器企业" }], related_universities: ["u009", "u015"], related_majors: ["m015", "m026"] },
-      { id: "ind403", name: "氢能与燃料电池", description: "绿氢制备、储运、加注、燃料电池系统。", representative_cities: [{ cityId: "c012", note: "常州：氢能产业先导区" }, { cityId: "c002", note: "上海：燃料电池汽车示范城市群牵头" }, { cityId: "c013", note: "佛山：氢能产业全国领先" }], related_universities: ["u009", "u003"], related_majors: ["m015", "m026", "m006"] },
-      { id: "ind404", name: "新型储能", description: "液流电池、钠离子电池、压缩空气储能、飞轮储能等。", representative_cities: [{ cityId: "c008", note: "宁德：宁德时代钠离子电池" }, { cityId: "c011", note: "大连：液流电池储能调峰电站" }, { cityId: "c007", note: "合肥：中科院等离子体所" }], related_universities: ["u009", "u010"], related_majors: ["m016", "m015"] }
+      { id: "ind401", name: "动力电池全产业链", description: "涵盖正极/负极/电解液/隔膜/电芯/电池包全链条。", representative_cities: [{ cityId: "c008", note: "宁德：宁德时代总部，全球市占率37%+" }, { cityId: "c012", note: "常州：中创新航/蜂巢能源总部，动力电池产量全国第一" }, { cityId: "c007", note: "合肥：国轩高科总部，大众电池战略基地" }], related_universities: ["u070","u003","u031","u015","u034","u009","u010","u088","u109","u094","u047"], related_majors: ["m016", "m015", "m026"] },
+      { id: "ind402", name: "光伏全产业链", description: "硅料/硅片/电池片/组件/逆变器全产业链。", representative_cities: [{ cityId: "c012", note: "常州：天合光能/亿晶光电总部" }, { cityId: "c007", note: "合肥：通威/阳光电源/晶澳生产基地" }, { cityId: "c005", note: "杭州：正泰/锦浪等逆变器企业" }], related_universities: ["u015","u009","u035","u034","u101","u094","u109"], related_majors: ["m015", "m026"] },
+      { id: "ind403", name: "氢能与燃料电池", description: "绿氢制备、储运、加注、燃料电池系统。", representative_cities: [{ cityId: "c012", note: "常州：氢能产业先导区" }, { cityId: "c002", note: "上海：燃料电池汽车示范城市群牵头" }, { cityId: "c013", note: "佛山：氢能产业全国领先" }], related_universities: ["u003","u036","u009","u015","u035","u034","u094"], related_majors: ["m015", "m026", "m006"] },
+      { id: "ind404", name: "新型储能", description: "液流电池、钠离子电池、压缩空气储能、飞轮储能等。", representative_cities: [{ cityId: "c008", note: "宁德：宁德时代钠离子电池" }, { cityId: "c011", note: "大连：液流电池储能调峰电站" }, { cityId: "c007", note: "合肥：中科院等离子体所" }], related_universities: ["u031","u009","u010","u015","u067","u102","u094","u038","u035"], related_majors: ["m016", "m015"] }
     ]
   },
   // ---- 纲5：新能源汽车 ----
   {
     id: "ind500", 纲: "新能源汽车", 纲_desc: "以电动化、智能化、网联化为方向的新能源汽车全产业链。",
     目: [
-      { id: "ind501", name: "新能源整车制造", description: "纯电动/插混/增程/燃料电池汽车整车设计制造。", representative_cities: [{ cityId: "c003", note: "深圳：比亚迪全球总部" }, { cityId: "c002", note: "上海：特斯拉超级工厂/上汽集团" }, { cityId: "c007", note: "合肥：蔚来/大众安徽/比亚迪三大基地" }], related_universities: ["u015", "u009"], related_majors: ["m006", "m015", "m017"] },
-      { id: "ind502", name: "电驱电控系统", description: "电机、电控、IGBT/SiC功率模块、车载充电机。", representative_cities: [{ cityId: "c003", note: "深圳：比亚迪半导体/汇川技术" }, { cityId: "c012", note: "常州：中车时代/宏微科技电控基地" }, { cityId: "c007", note: "合肥：阳光电源/巨一自动化" }], related_universities: ["u009", "u015"], related_majors: ["m018", "m014", "m006"] },
-      { id: "ind503", name: "智能网联汽车", description: "V2X车路协同、智能座舱、OTA升级、高精地图。", representative_cities: [{ cityId: "c003", note: "深圳：华为智能汽车BU/百度Apollo深圳" }, { cityId: "c001", note: "北京：百度Apollo总部/小马智行" }, { cityId: "c002", note: "上海：上汽零束/滴滴自动驾驶" }], related_universities: ["u003", "u002", "u005"], related_majors: ["m009", "m010", "m011"] }
+      { id: "ind501", name: "新能源整车制造", description: "纯电动/插混/增程/燃料电池汽车整车设计制造。", representative_cities: [{ cityId: "c003", note: "深圳：比亚迪全球总部" }, { cityId: "c002", note: "上海：特斯拉超级工厂/上汽集团" }, { cityId: "c007", note: "合肥：蔚来/大众安徽/比亚迪三大基地" }], related_universities: ["u003","u036","u018","u015","u034","u069","u009","u045","u091","u049","u014","u093"], related_majors: ["m006", "m015", "m017"] },
+      { id: "ind502", name: "电驱电控系统", description: "电机、电控、IGBT/SiC功率模块、车载充电机。", representative_cities: [{ cityId: "c003", note: "深圳：比亚迪半导体/汇川技术" }, { cityId: "c012", note: "常州：中车时代/宏微科技电控基地" }, { cityId: "c007", note: "合肥：阳光电源/巨一自动化" }], related_universities: ["u003","u015","u009","u034","u032","u033","u092","u049","u014","u094"], related_majors: ["m018", "m014", "m006"] },
+      { id: "ind503", name: "智能网联汽车", description: "V2X车路协同、智能座舱、OTA升级、高精地图。", representative_cities: [{ cityId: "c003", note: "深圳：华为智能汽车BU/百度Apollo深圳" }, { cityId: "c001", note: "北京：百度Apollo总部/小马智行" }, { cityId: "c002", note: "上海：上汽零束/滴滴自动驾驶" }], related_universities: ["u003","u002","u005","u036","u066","u032","u092","u090","u049","u014","u050"], related_majors: ["m009", "m010", "m011"] }
     ]
   },
   // ---- 纲6：新材料 ----
   {
     id: "ind600", 纲: "新材料", 纲_desc: "先进基础材料、关键战略材料、前沿新材料的研发与产业化。",
     目: [
-      { id: "ind601", name: "半导体材料", description: "大硅片、光刻胶、电子特气、靶材等芯片制造关键材料。", representative_cities: [{ cityId: "c002", note: "上海：沪硅产业/安集科技" }, { cityId: "c010", note: "无锡：雅克科技/江丰电子靶材基地" }, { cityId: "c028", note: "淄博：东岳集团含氟电子材料" }], related_universities: ["u009", "u007"], related_majors: ["m026", "m018"] },
-      { id: "ind602", name: "碳纤维及复合材料", description: "高性能碳纤维、玻璃纤维、芳纶等复合材料。", representative_cities: [{ cityId: "c023", note: "威海：光威复材/碳纤维全产业链" }, { cityId: "c024", note: "镇江：恒神股份/碳纤维龙头" }, { cityId: "c012", note: "常州：中简科技/碳纤维及复合材料" }], related_universities: ["u009"], related_majors: ["m026"] },
-      { id: "ind603", name: "稀土功能材料", description: "稀土永磁、稀土催化、稀土发光、稀土储氢等。", representative_cities: [{ cityId: "c025", note: "包头：白云鄂博稀土矿/北方稀土" }, { cityId: "c026", note: "赣州：中国稀金谷/离子型稀土" }, { cityId: "c019", note: "宁波：韵升/科宁达等稀土永磁企业" }], related_universities: ["u025"], related_majors: ["m026"] },
-      { id: "ind604", name: "化工新材料", description: "高端聚烯烃、工程塑料、特种橡胶、电子化学品。", representative_cities: [{ cityId: "c028", note: "淄博：东岳集团/齐翔腾达/化工新材料产业集群" }, { cityId: "c025", note: "鄂尔多斯：煤基新材料基地" }, { cityId: "c029", note: "烟台：万华化学/MDI全球第一" }], related_universities: ["u017", "u024"], related_majors: ["m026", "m035"] },
-      { id: "ind605", name: "生物医用材料", description: "可降解植入材料、组织工程支架、纳米药物载体。", representative_cities: [{ cityId: "c002", note: "上海：微创医疗/乐普医疗" }, { cityId: "c003", note: "深圳：先健科技/业聚医疗" }, { cityId: "c001", note: "北京：奥精医疗/纳通医疗" }], related_universities: ["u003", "u008"], related_majors: ["m021", "m004"] }
+      { id: "ind601", name: "半导体材料", description: "大硅片、光刻胶、电子特气、靶材等芯片制造关键材料。", representative_cities: [{ cityId: "c002", note: "上海：沪硅产业/安集科技" }, { cityId: "c010", note: "无锡：雅克科技/江丰电子靶材基地" }, { cityId: "c028", note: "淄博：东岳集团含氟电子材料" }], related_universities: ["u003","u007","u009","u039","u035","u088","u101","u017","u047"], related_majors: ["m026", "m018"] },
+      { id: "ind602", name: "碳纤维及复合材料", description: "高性能碳纤维、玻璃纤维、芳纶等复合材料。", representative_cities: [{ cityId: "c023", note: "威海：光威复材/碳纤维全产业链" }, { cityId: "c024", note: "镇江：恒神股份/碳纤维龙头" }, { cityId: "c012", note: "常州：中简科技/碳纤维及复合材料" }], related_universities: ["u009","u001","u035","u081","u103","u101","u017"], related_majors: ["m026"] },
+      { id: "ind603", name: "稀土功能材料", description: "稀土永磁、稀土催化、稀土发光、稀土储氢等。", representative_cities: [{ cityId: "c025", note: "包头：白云鄂博稀土矿/北方稀土" }, { cityId: "c026", note: "赣州：中国稀金谷/离子型稀土" }, { cityId: "c019", note: "宁波：韵升/科宁达等稀土永磁企业" }], related_universities: ["u025","u070","u052","u039","u001","u003","u017"], related_majors: ["m026"] },
+      { id: "ind604", name: "化工新材料", description: "高端聚烯烃、工程塑料、特种橡胶、电子化学品。", representative_cities: [{ cityId: "c028", note: "淄博：东岳集团/齐翔腾达/化工新材料产业集群" }, { cityId: "c025", note: "鄂尔多斯：煤基新材料基地" }, { cityId: "c029", note: "烟台：万华化学/MDI全球第一" }], related_universities: ["u035","u064","u063","u038","u024","u009","u017","u101"], related_majors: ["m026", "m035"] },
+      { id: "ind605", name: "生物医用材料", description: "可降解植入材料、组织工程支架、纳米药物载体。", representative_cities: [{ cityId: "c002", note: "上海：微创医疗/乐普医疗" }, { cityId: "c003", note: "深圳：先健科技/业聚医疗" }, { cityId: "c001", note: "北京：奥精医疗/纳通医疗" }], related_universities: ["u003","u008","u058","u088","u105","u016","u048"], related_majors: ["m021", "m004"] }
     ]
   },
   // ---- 纲7：生物医药与大健康 ----
   {
     id: "ind700", 纲: "生物医药与大健康", 纲_desc: "创新药研发、高端医疗器械、精准医疗与大健康服务。",
     目: [
-      { id: "ind701", name: "创新药研发", description: "小分子药物、抗体药物、ADC、细胞/基因治疗。", representative_cities: [{ cityId: "c002", note: "上海：张江药谷，跨国药企研发中心200+" }, { cityId: "c006", note: "苏州：BioBAY生物医药产业园，信达/基石等" }, { cityId: "c001", note: "北京：中关村生命科学园/亦庄生物医药基地" }], related_universities: ["u003", "u008", "u016"], related_majors: ["m021", "m004", "m025"] },
-      { id: "ind702", name: "高端医疗器械", description: "医学影像设备、体外诊断、微创手术器械、植入器械。", representative_cities: [{ cityId: "c003", note: "深圳：迈瑞/理邦/开立等医疗器械龙头" }, { cityId: "c002", note: "上海：联影/微创医疗总部" }, { cityId: "c006", note: "苏州：飞利浦/强生医疗生产基地" }], related_universities: ["u003", "u008", "u016"], related_majors: ["m021", "m025"] },
-      { id: "ind703", name: "精准医疗与基因技术", description: "NGS基因测序、液体活检、伴随诊断、细胞治疗。", representative_cities: [{ cityId: "c003", note: "深圳：华大基因/华大智造全球总部" }, { cityId: "c001", note: "北京：贝瑞基因/诺禾致源" }, { cityId: "c005", note: "杭州：迪安诊断/艾迪康" }], related_universities: ["u003", "u004"], related_majors: ["m021", "m004"] },
-      { id: "ind704", name: "中医药现代化", description: "中药创新药、配方颗粒、中药智能制造、中医药大健康。", representative_cities: [{ cityId: "c031", note: "亳州：全球最大中药材集散中心" }, { cityId: "c032", note: "樟树：中国药都" }, { cityId: "c005", note: "杭州：胡庆余堂/康恩贝" }], related_universities: ["u026", "u027"], related_majors: ["m043", "m044"] }
+      { id: "ind701", name: "创新药研发", description: "小分子药物、抗体药物、ADC、细胞/基因治疗。", representative_cities: [{ cityId: "c002", note: "上海：张江药谷，跨国药企研发中心200+" }, { cityId: "c006", note: "苏州：BioBAY生物医药产业园，信达/基石等" }, { cityId: "c001", note: "北京：中关村生命科学园/亦庄生物医药基地" }], related_universities: ["u003","u008","u018","u041","u064","u058","u016","u089","u088","u105","u048"], related_majors: ["m021", "m004", "m025"] },
+      { id: "ind702", name: "高端医疗器械", description: "医学影像设备、体外诊断、微创手术器械、植入器械。", representative_cities: [{ cityId: "c003", note: "深圳：迈瑞/理邦/开立等医疗器械龙头" }, { cityId: "c002", note: "上海：联影/微创医疗总部" }, { cityId: "c006", note: "苏州：飞利浦/强生医疗生产基地" }], related_universities: ["u003","u008","u018","u058","u007","u016","u105","u088","u014","u048"], related_majors: ["m021", "m025"] },
+      { id: "ind703", name: "精准医疗与基因技术", description: "NGS基因测序、液体活检、伴随诊断、细胞治疗。", representative_cities: [{ cityId: "c003", note: "深圳：华大基因/华大智造全球总部" }, { cityId: "c001", note: "北京：贝瑞基因/诺禾致源" }, { cityId: "c005", note: "杭州：迪安诊断/艾迪康" }], related_universities: ["u003","u004","u076","u088","u105","u016","u107","u048"], related_majors: ["m021", "m004"] },
+      { id: "ind704", name: "中医药现代化", description: "中药创新药、配方颗粒、中药智能制造、中医药大健康。", representative_cities: [{ cityId: "c031", note: "亳州：全球最大中药材集散中心" }, { cityId: "c032", note: "樟树：中国药都" }, { cityId: "c005", note: "杭州：胡庆余堂/康恩贝" }], related_universities: ["u026","u027","u041","u003","u005","u016"], related_majors: ["m043", "m044"] }
     ]
   },
   // ---- 纲8：节能环保 ----
   {
     id: "ind800", 纲: "节能环保", 纲_desc: "水气固废治理、碳减排、环境监测等绿色产业。",
     目: [
-      { id: "ind801", name: "水污染治理与资源化", description: "高难度工业废水处理、市政污水提标、海水淡化。", representative_cities: [{ cityId: "c010", note: "无锡：碧水源/鹏鹞环保" }, { cityId: "c001", note: "北京：碧水源总部" }, { cityId: "c014", note: "天津：膜天膜科技" }], related_universities: ["u003"], related_majors: ["m046"] },
-      { id: "ind802", name: "固废资源化与循环经济", description: "城市矿产、动力电池回收、建筑垃圾资源化。", representative_cities: [{ cityId: "c003", note: "深圳：格林美/动力电池回收龙头" }, { cityId: "c006", note: "苏州：光大环境总部" }, { cityId: "c040", note: "许昌：城市矿产示范基地" }], related_universities: ["u009"], related_majors: ["m046", "m016"] },
-      { id: "ind803", name: "碳捕集利用与封存(CCUS)", description: "工业碳捕集、CO₂驱油、矿化利用、碳汇。", representative_cities: [{ cityId: "c001", note: "北京：CCUS技术路线图牵头" }, { cityId: "c002", note: "上海：华能CCUS示范项目" }, { cityId: "c033", note: "东营：胜利油田CO₂驱油与封存" }], related_universities: ["u003", "u009"], related_majors: ["m015", "m046"] }
+      { id: "ind801", name: "水污染治理与资源化", description: "高难度工业废水处理、市政污水提标、海水淡化。", representative_cities: [{ cityId: "c010", note: "无锡：碧水源/鹏鹞环保" }, { cityId: "c001", note: "北京：碧水源总部" }, { cityId: "c014", note: "天津：膜天膜科技" }], related_universities: ["u003","u080","u035","u099","u102","u046","u017"], related_majors: ["m046"] },
+      { id: "ind802", name: "固废资源化与循环经济", description: "城市矿产、动力电池回收、建筑垃圾资源化。", representative_cities: [{ cityId: "c003", note: "深圳：格林美/动力电池回收龙头" }, { cityId: "c006", note: "苏州：光大环境总部" }, { cityId: "c040", note: "许昌：城市矿产示范基地" }], related_universities: ["u009","u003","u082","u035","u034","u046","u017"], related_majors: ["m046", "m016"] },
+      { id: "ind803", name: "碳捕集利用与封存(CCUS)", description: "工业碳捕集、CO₂驱油、矿化利用、碳汇。", representative_cities: [{ cityId: "c001", note: "北京：CCUS技术路线图牵头" }, { cityId: "c002", note: "上海：华能CCUS示范项目" }, { cityId: "c033", note: "东营：胜利油田CO₂驱油与封存" }], related_universities: ["u003","u009","u062","u111","u035","u015","u109","u094"], related_majors: ["m015", "m046"] }
     ]
   },
   // ---- 纲9：数字创意 ----
   {
     id: "ind900", 纲: "数字创意", 纲_desc: "数字技术与文化创意深度融合的新兴产业集群。",
     目: [
-      { id: "ind901", name: "游戏与电竞", description: "手游/端游/主机游戏研发，电竞赛事运营。", representative_cities: [{ cityId: "c003", note: "深圳：腾讯游戏/创梦天地" }, { cityId: "c002", note: "上海：米哈游/莉莉丝/鹰角网络" }, { cityId: "c005", note: "杭州：网易/电魂网络" }], related_universities: ["u028", "u029"], related_majors: ["m011", "m049", "m050"] },
-      { id: "ind902", name: "数字影视与动画", description: "CG动画、视效制作、虚拟拍摄、数字人。", representative_cities: [{ cityId: "c001", note: "北京：中影/追光动画/光线传媒" }, { cityId: "c005", note: "杭州：华策影视/玄机科技" }, { cityId: "c034", note: "长沙：马栏山视频文创产业园" }], related_universities: ["u028", "u029"], related_majors: ["m049", "m050"] },
-      { id: "ind903", name: "虚拟现实与元宇宙", description: "VR/AR/MR硬件、空间计算、数字孪生。", representative_cities: [{ cityId: "c003", note: "深圳：HTC VIVE/创维VR/Pico" }, { cityId: "c001", note: "北京：字节Pico/当红齐天" }, { cityId: "c020", note: "青岛：歌尔股份/VR代工全球第一" }], related_universities: ["u002", "u005"], related_majors: ["m009", "m011", "m050"] }
+      { id: "ind901", name: "游戏与电竞", description: "手游/端游/主机游戏研发，电竞赛事运营。", representative_cities: [{ cityId: "c003", note: "深圳：腾讯游戏/创梦天地" }, { cityId: "c002", note: "上海：米哈游/莉莉丝/鹰角网络" }, { cityId: "c005", note: "杭州：网易/电魂网络" }], related_universities: ["u028","u029","u005","u034","u090","u050","u093"], related_majors: ["m011", "m049", "m050"] },
+      { id: "ind902", name: "数字影视与动画", description: "CG动画、视效制作、虚拟拍摄、数字人。", representative_cities: [{ cityId: "c001", note: "北京：中影/追光动画/光线传媒" }, { cityId: "c005", note: "杭州：华策影视/玄机科技" }, { cityId: "c034", note: "长沙：马栏山视频文创产业园" }], related_universities: ["u028","u029","u003","u075","u034","u050","u093"], related_majors: ["m049", "m050"] },
+      { id: "ind903", name: "虚拟现实与元宇宙", description: "VR/AR/MR硬件、空间计算、数字孪生。", representative_cities: [{ cityId: "c003", note: "深圳：HTC VIVE/创维VR/Pico" }, { cityId: "c001", note: "北京：字节Pico/当红齐天" }, { cityId: "c020", note: "青岛：歌尔股份/VR代工全球第一" }], related_universities: ["u002","u005","u003","u032","u090","u050","u093"], related_majors: ["m009", "m011", "m050"] }
     ]
   },
   // ---- 纲10：现代金融服务 ----
   {
     id: "ind1000", 纲: "现代金融服务", 纲_desc: "以金融科技为引擎的现代金融服务体系。",
     目: [
-      { id: "ind1001", name: "金融科技", description: "区块链、智能风控、量化交易、监管科技。", representative_cities: [{ cityId: "c001", note: "北京：金融街+中关村，金融科技企业最集中" }, { cityId: "c002", note: "上海：陆家嘴金融科技产业园" }, { cityId: "c003", note: "深圳：微众银行/平安科技/腾讯金融" }], related_universities: ["u011", "u012"], related_majors: ["m008", "m022", "m023"] },
-      { id: "ind1002", name: "绿色金融与碳交易", description: "碳交易市场、ESG投资、绿色债券评级。", representative_cities: [{ cityId: "c002", note: "上海：全国碳交易市场运营中心" }, { cityId: "c001", note: "北京：北京绿色交易所/CCER注册中心" }, { cityId: "c003", note: "深圳：深圳排放权交易所" }], related_universities: ["u011", "u012"], related_majors: ["m008", "m022", "m023"] },
-      { id: "ind1003", name: "跨境金融与人民币国际化", description: "跨境人民币结算、离岸金融、自贸区金融。", representative_cities: [{ cityId: "c002", note: "上海：自贸区临港新片区" }, { cityId: "c003", note: "深圳：前海深港现代服务业合作区" }, { cityId: "c021", note: "海南自贸港" }], related_universities: ["u011", "u012"], related_majors: ["m022", "m008"] }
+      { id: "ind1001", name: "金融科技", description: "区块链、智能风控、量化交易、监管科技。", representative_cities: [{ cityId: "c001", note: "北京：金融街+中关村，金融科技企业最集中" }, { cityId: "c002", note: "上海：陆家嘴金融科技产业园" }, { cityId: "c003", note: "深圳：微众银行/平安科技/腾讯金融" }], related_universities: ["u011","u012","u003","u008","u086","u087","u090","u044","u050"], related_majors: ["m008", "m022", "m023"] },
+      { id: "ind1002", name: "绿色金融与碳交易", description: "碳交易市场、ESG投资、绿色债券评级。", representative_cities: [{ cityId: "c002", note: "上海：全国碳交易市场运营中心" }, { cityId: "c001", note: "北京：北京绿色交易所/CCER注册中心" }, { cityId: "c003", note: "深圳：排放权交易所" }], related_universities: ["u011","u012","u003","u086","u110","u087","u044"], related_majors: ["m008", "m022", "m023"] },
+      { id: "ind1003", name: "跨境金融与人民币国际化", description: "跨境人民币结算、离岸金融、自贸区金融。", representative_cities: [{ cityId: "c002", note: "上海：自贸区临港新片区" }, { cityId: "c003", note: "深圳：前海深港现代服务业合作区" }, { cityId: "c021", note: "海南自贸港" }], related_universities: ["u011","u012","u087","u110","u045","u008"], related_majors: ["m022", "m008"] }
     ]
   },
   // ---- 纲11：现代农业与食品 ----
   {
     id: "ind1100", 纲: "现代农业与食品", 纲_desc: "以生物技术和信息技术驱动的现代农业与食品产业。",
     目: [
-      { id: "ind1101", name: "现代种业与生物育种", description: "基因编辑育种、分子标记辅助育种、智慧育种。", representative_cities: [{ cityId: "c035", note: "三亚：南繁硅谷/全球最大育种基地" }, { cityId: "c036", note: "杨凌：中国农科城" }, { cityId: "c001", note: "北京：国家种业创新中心" }], related_universities: ["u006", "u013"], related_majors: ["m005", "m004"] },
-      { id: "ind1102", name: "智慧农业", description: "农业无人机/机器人、精准灌溉、农业物联网。", representative_cities: [{ cityId: "c036", note: "杨凌：旱区智慧农业" }, { cityId: "c003", note: "深圳：大疆农业无人机全球总部" }, { cityId: "c001", note: "北京：国家农业信息化工程中心" }], related_universities: ["u006", "u013"], related_majors: ["m005", "m003"] },
-      { id: "ind1103", name: "食品精深加工", description: "功能性食品、预制菜、发酵食品、植物基蛋白。", representative_cities: [{ cityId: "c037", note: "漯河：双汇/中国食品名城" }, { cityId: "c020", note: "青岛：青啤/深海食品产业集群" }, { cityId: "c038", note: "漳州：中国食品名城" }], related_universities: ["u006"], related_majors: ["m045", "m004"] }
+      { id: "ind1101", name: "现代种业与生物育种", description: "基因编辑育种、分子标记辅助育种、智慧育种。", representative_cities: [{ cityId: "c035", note: "三亚：南繁硅谷/全球最大育种基地" }, { cityId: "c036", note: "杨凌：中国农科城" }, { cityId: "c001", note: "北京：国家种业创新中心" }], related_universities: ["u006","u013","u084","u085","u003","u110","u055"], related_majors: ["m005", "m004"] },
+      { id: "ind1102", name: "智慧农业", description: "农业无人机/机器人、精准灌溉、农业物联网。", representative_cities: [{ cityId: "c036", note: "杨凌：旱区智慧农业" }, { cityId: "c003", note: "深圳：大疆农业无人机全球总部" }, { cityId: "c001", note: "北京：国家农业信息化工程中心" }], related_universities: ["u006","u013","u084","u111","u014","u046","u050"], related_majors: ["m005", "m003"] },
+      { id: "ind1103", name: "食品精深加工", description: "功能性食品、预制菜、发酵食品、植物基蛋白。", representative_cities: [{ cityId: "c037", note: "漯河：双汇/中国食品名城" }, { cityId: "c020", note: "青岛：青啤/深海食品产业集群" }, { cityId: "c038", note: "漳州：中国食品名城" }], related_universities: ["u006","u034","u065","u084","u085"], related_majors: ["m045", "m004"] }
     ]
   },
   // ---- 纲12：现代物流与供应链 ----
   {
     id: "ind1200", 纲: "现代物流与供应链", 纲_desc: "智慧物流、全球供应链管理、跨境电商物流。",
     目: [
-      { id: "ind1201", name: "智慧物流与无人配送", description: "无人仓、无人车、无人机配送、物流大脑。", representative_cities: [{ cityId: "c003", note: "深圳：顺丰/菜鸟/丰巢科技" }, { cityId: "c005", note: "杭州：菜鸟网络/阿里物流大脑" }, { cityId: "c002", note: "上海：中通/圆通/德邦总部集聚" }], related_universities: ["u005", "u030"], related_majors: ["m048", "m009", "m003"] },
-      { id: "ind1202", name: "跨境电商与国际物流", description: "海外仓、跨境支付、国际快递、通关数字化。", representative_cities: [{ cityId: "c003", note: "深圳：跨境电商出口全国第一" }, { cityId: "c005", note: "杭州：阿里国际站/速卖通" }, { cityId: "c004", note: "广州：Shein/唯品会/南沙保税港" }], related_universities: ["u030"], related_majors: ["m048", "m007"] }
+      { id: "ind1201", name: "智慧物流与无人配送", description: "无人仓、无人车、无人机配送、物流大脑。", representative_cities: [{ cityId: "c003", note: "深圳：顺丰/菜鸟/丰巢科技" }, { cityId: "c005", note: "杭州：菜鸟网络/阿里物流大脑" }, { cityId: "c002", note: "上海：中通/圆通/德邦总部集聚" }], related_universities: ["u005","u030","u079","u003","u090","u014","u050"], related_majors: ["m048", "m009", "m003"] },
+      { id: "ind1202", name: "跨境电商与国际物流", description: "海外仓、跨境支付、国际快递、通关数字化。", representative_cities: [{ cityId: "c003", note: "深圳：跨境电商出口全国第一" }, { cityId: "c005", note: "杭州：阿里国际站/速卖通" }, { cityId: "c004", note: "广州：Shein/唯品会/南沙保税港" }], related_universities: ["u030","u005","u087","u011","u090","u014"], related_majors: ["m048", "m007"] }
     ]
   },
   // ---- 纲13：航空航天 ----
   {
     id: "ind1300", 纲: "航空航天", 纲_desc: "商业航天、卫星互联网、低空经济等空天产业集群。",
     目: [
-      { id: "ind1301", name: "商业航天", description: "商业火箭、卫星制造、航天测控运营。", representative_cities: [{ cityId: "c001", note: "北京：星际荣耀/蓝箭/星河动力" }, { cityId: "c017", note: "西安：中科宇航/银河航天" }, { cityId: "c032", note: "文昌：商业航天发射场" }], related_universities: ["u001", "u002", "u017"], related_majors: ["m038", "m039", "m027"] },
-      { id: "ind1302", name: "卫星互联网", description: "低轨宽带星座、卫星物联网、通导遥一体化。", representative_cities: [{ cityId: "c001", note: "北京：中国星网/银河航天" }, { cityId: "c017", note: "西安：航天五院西安分院" }, { cityId: "c003", note: "深圳：亚太卫星/椭圆时空" }], related_universities: ["u001", "u002", "u003"], related_majors: ["m039", "m010", "m038"] },
-      { id: "ind1303", name: "低空经济与无人机", description: "eVTOL、工业/消费无人机、低空管理系统。", representative_cities: [{ cityId: "c003", note: "深圳：大疆创新/峰飞/低空经济条例先行" }, { cityId: "c001", note: "北京：亿航智能/丰鸟科技" }, { cityId: "c005", note: "杭州：迅蚁/城市无人机配送试点" }], related_universities: ["u002", "u001", "u014"], related_majors: ["m027", "m001", "m003"] }
+      { id: "ind1301", name: "商业航天", description: "商业火箭、卫星制造、航天测控运营。", representative_cities: [{ cityId: "c001", note: "北京：星际荣耀/蓝箭/星河动力" }, { cityId: "c017", note: "西安：中科宇航/银河航天" }, { cityId: "c032", note: "文昌：商业航天发射场" }], related_universities: ["u001","u002","u068","u023","u003","u050","u014"], related_majors: ["m038", "m039", "m027"] },
+      { id: "ind1302", name: "卫星互联网", description: "低轨宽带星座、卫星物联网、通导遥一体化。", representative_cities: [{ cityId: "c001", note: "北京：中国星网/银河航天" }, { cityId: "c017", note: "西安：航天五院西安分院" }, { cityId: "c003", note: "深圳：亚太卫星/椭圆时空" }], related_universities: ["u001","u002","u003","u023","u033","u053","u050"], related_majors: ["m039", "m010", "m038"] },
+      { id: "ind1303", name: "低空经济与无人机", description: "eVTOL、工业/消费无人机、低空管理系统。", representative_cities: [{ cityId: "c003", note: "深圳：大疆创新/峰飞/低空经济条例先行" }, { cityId: "c001", note: "北京：亿航智能/丰鸟科技" }, { cityId: "c005", note: "杭州：迅蚁/城市无人机配送试点" }], related_universities: ["u002","u001","u023","u068","u014","u050","u096"], related_majors: ["m027", "m001", "m003"] }
     ]
   },
   // ---- 纲14：海洋经济 ----
   {
     id: "ind1400", 纲: "海洋经济", 纲_desc: "海洋资源开发、海洋装备、海洋生物医药等蓝色产业集群。",
     目: [
-      { id: "ind1401", name: "海洋生物医药", description: "海洋药物、海洋功能食品、海洋生物材料。", representative_cities: [{ cityId: "c020", note: "青岛：海洋国家实验室/中国海洋大学" }, { cityId: "c003", note: "深圳：大鹏海洋生物产业园" }, { cityId: "c033", note: "厦门：海洋三所/蓝湾科技" }], related_universities: ["u021", "u022"], related_majors: ["m021", "m041"] },
-      { id: "ind1402", name: "海上风电与海洋能", description: "深远海风电、漂浮式风电、潮汐能、温差能。", representative_cities: [{ cityId: "c039", note: "阳江：海上风电之都/装机容量全国第一" }, { cityId: "c020", note: "青岛：海上风电装备制造基地" }, { cityId: "c024", note: "南通：海上风电母港" }], related_universities: ["u021"], related_majors: ["m015", "m041"] },
-      { id: "ind1403", name: "海水淡化与综合利用", description: "反渗透膜、低温多效蒸馏、浓海水提溴/提钾。", representative_cities: [{ cityId: "c014", note: "天津：海水淡化研究所/北疆电厂" }, { cityId: "c020", note: "青岛：董家口海水淡化基地" }, { cityId: "c005", note: "杭州：杭州水处理中心" }], related_universities: ["u021", "u003"], related_majors: ["m046", "m041"] }
+      { id: "ind1401", name: "海洋生物医药", description: "海洋药物、海洋功能食品、海洋生物材料。", representative_cities: [{ cityId: "c020", note: "青岛：海洋国家实验室/中国海洋大学" }, { cityId: "c003", note: "深圳：大鹏海洋生物产业园" }, { cityId: "c033", note: "厦门：海洋三所/蓝湾科技" }], related_universities: ["u021","u022","u003","u060","u041","u110","u048"], related_majors: ["m021", "m041"] },
+      { id: "ind1402", name: "海上风电与海洋能", description: "深远海风电、漂浮式风电、潮汐能、温差能。", representative_cities: [{ cityId: "c039", note: "阳江：海上风电之都/装机容量全国第一" }, { cityId: "c020", note: "青岛：海上风电装备制造基地" }, { cityId: "c024", note: "南通：海上风电母港" }], related_universities: ["u021","u018","u080","u009","u102","u047"], related_majors: ["m015", "m041"] },
+      { id: "ind1403", name: "海水淡化与综合利用", description: "反渗透膜、低温多效蒸馏、浓海水提溴/提钾。", representative_cities: [{ cityId: "c014", note: "天津：海水淡化研究所/北疆电厂" }, { cityId: "c020", note: "青岛：董家口海水淡化基地" }, { cityId: "c005", note: "杭州：杭州水处理中心" }], related_universities: ["u021","u003","u035","u080","u099"], related_majors: ["m046", "m041"] }
     ]
   },
   // ---- 纲15：未来产业 ----
   {
     id: "ind1500", 纲: "未来产业", 纲_desc: "面向未来10-15年的颠覆性技术方向。",
     目: [
-      { id: "ind1501", name: "脑机接口与神经工程", description: "侵入式/非侵入式脑机接口、神经调控、类脑芯片。", representative_cities: [{ cityId: "c001", note: "北京：脑科学与类脑研究中心" }, { cityId: "c002", note: "上海：张江脑科学研究院" }, { cityId: "c005", note: "杭州：浙大脑机接口团队（高位截瘫患者意念控制）" }], related_universities: ["u002", "u003", "u004", "u008"], related_majors: ["m002", "m021", "m025"] },
-      { id: "ind1502", name: "量子信息", description: "量子计算、量子通信、量子精密测量。", representative_cities: [{ cityId: "c007", note: "合肥：中科大/量子信息国家实验室" }, { cityId: "c001", note: "北京：量子信息科学研究院" }, { cityId: "c005", note: "杭州：之江实验室/阿里量子" }], related_universities: ["u003", "u004", "u002"], related_majors: ["m019"] },
-      { id: "ind1503", name: "合成生物学", description: "基因合成、代谢工程、无细胞体系、生物铸造厂。", representative_cities: [{ cityId: "c003", note: "深圳：华大基因/合成生物重大科技设施" }, { cityId: "c002", note: "上海：凯赛生物/蓝晶微生物" }, { cityId: "c014", note: "天津：中科院工生所/国家合成生物技术创新中心" }], related_universities: ["u003", "u006"], related_majors: ["m004"] },
-      { id: "ind1504", name: "深地科学与深海探测", description: "深地工程、深海潜水器、深海资源勘探、地球深部探测。", representative_cities: [{ cityId: "c003", note: "深圳：中广核/深海科技创新中心" }, { cityId: "c020", note: "青岛：国家深海基地/蛟龙号母港" }, { cityId: "c001", note: "北京：中科院地质地球所" }], related_universities: ["u021", "u003"], related_majors: ["m040", "m041"] }
+      { id: "ind1501", name: "脑机接口与神经工程", description: "侵入式/非侵入式脑机接口、神经调控、类脑芯片。", representative_cities: [{ cityId: "c001", note: "北京：脑科学与类脑研究中心" }, { cityId: "c002", note: "上海：张江脑科学研究院" }, { cityId: "c005", note: "杭州：浙大脑机接口团队（高位截瘫患者意念控制）" }], related_universities: ["u002","u003","u004","u008","u005","u016","u105","u042","u048"], related_majors: ["m002", "m021", "m025"] },
+      { id: "ind1502", name: "量子信息", description: "量子计算、量子通信、量子精密测量。", representative_cities: [{ cityId: "c007", note: "合肥：中科大/量子信息国家实验室" }, { cityId: "c001", note: "北京：量子信息科学研究院" }, { cityId: "c005", note: "杭州：之江实验室/阿里量子" }], related_universities: ["u031","u003","u004","u002","u056","u067","u107"], related_majors: ["m019"] },
+      { id: "ind1503", name: "合成生物学", description: "基因合成、代谢工程、无细胞体系、生物铸造厂。", representative_cities: [{ cityId: "c003", note: "深圳：华大基因/合成生物重大科技设施" }, { cityId: "c002", note: "上海：凯赛生物/蓝晶微生物" }, { cityId: "c014", note: "天津：中科院工生所/国家合成生物技术创新中心" }], related_universities: ["u003","u006","u004","u064","u035","u107","u048"], related_majors: ["m004"] },
+      { id: "ind1504", name: "深地科学与深海探测", description: "深地工程、深海潜水器、深海资源勘探、地球深部探测。", representative_cities: [{ cityId: "c003", note: "深圳：中广核/深海科技创新中心" }, { cityId: "c020", note: "青岛：国家深海基地/蛟龙号母港" }, { cityId: "c001", note: "北京：中科院地质地球所" }], related_universities: ["u021","u003","u018","u083","u072","u022"], related_majors: ["m040", "m041"] }
     ]
   }
 ];
@@ -415,7 +415,7 @@ const MAJORS = [
   { id: "m005", name: "农业机器人", category: "传统升级/智能形态", tags: ["最有潜力"], description: "面向智慧农业的机器人技术，无人农机、精准植保、智能采摘。", related_majors: ["m003", "m004", "m015"], related_universities: ["u006", "u013"], related_cities: ["c036", "c035", "c003"], related_industries: ["ind1102", "ind301"] },
   { id: "m006", name: "交通能源融通工程", category: "传统升级/智能形态", tags: ["最趋势"], description: "交通与能源系统深度融合，新能源汽车、智慧交通、V2G技术。", related_majors: ["m015", "m016", "m018"], related_universities: ["u009", "u010", "u015"], related_cities: ["c004", "c006", "c012"], related_industries: ["ind501", "ind401"] },
   { id: "m007", name: "商业人工智能", category: "传统升级/智能形态", tags: ["最热门", "最趋势"], description: "AI应用于商业决策、营销、供应链管理的交叉学科。", related_majors: ["m009", "m012", "m023"], related_universities: ["u003", "u011", "u012"], related_cities: ["c001", "c002", "c005"], related_industries: ["ind204"] },
-  { id: "m008", name: "数字金融", category: "传统升级/智能形态", tags: ["最热门"], description: "融合金融科技、区块链、量化分析的数字金融方向。", related_majors: ["m007", "m012", "m022", "m023"], related_universities: ["u011", "u012", "u008"], related_cities: ["c001", "c002", "c003"], related_industries: ["ind1001"] },
+  { id: "m008", name: "数字金融", category: "传统升级/智能形态", tags: ["最热门"], description: "融合金融科技、区块链、量化分析的数字金融方向。", related_majors: ["m007", "m012", "m022", "m023"], related_universities: ["u011","u012","u008","u003","u086","u087","u090","u050"], related_cities: ["c001", "c002", "c003"], related_industries: ["ind1001"] },
   // ===== 电子信息类 =====
   { id: "m009", name: "人工智能", category: "电子信息类", tags: ["最热门", "最趋势"], description: "研究模拟、延伸和扩展人类智能的理论与技术。近年最热门专业之一。", related_majors: ["m001", "m010", "m011", "m012", "m013", "m007", "m019"], related_universities: ["u001", "u002", "u003", "u004", "u005", "u007", "u011"], related_cities: ["c001", "c002", "c003", "c004", "c005"], related_industries: ["ind201", "ind202", "ind203", "ind204"] },
   { id: "m010", name: "计算机科学与技术", category: "计算机类", tags: ["最常见", "最热门"], description: "研究计算机系统结构、软件、算法与理论的经典核心专业。", related_majors: ["m009", "m011", "m012", "m020", "m024"], related_universities: ["u001", "u003", "u004", "u005", "u007", "u011", "u012", "u014", "u015"], related_cities: ["c001", "c002", "c003", "c004", "c005", "c007", "c016"], related_industries: ["ind202", "ind203", "ind204", "ind101"] },
